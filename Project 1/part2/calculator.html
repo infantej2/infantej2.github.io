@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Input Calculator</title>
+	</head>
+	<body>
+
+		<header>
+			<div>
+				<a href="index.html"><img src="../part2/images/cat-1.jpg" width="150" alt="Logo"></a>
+                <h1>CALCULATE</h1>
+            </div>
+			<nav>
+				<ul>
+					<li><a href="about.html" alt>About</a></li>
+					<li><a href="words.html" alt>Words</a></li>
+					<li><a href="pictures.html" alt>Pictures</a></li>
+					<li><a href="videos.html" alt>Videos</a></li>
+					<li><a href="calculator.html" alt>Calculate</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Hero section below this -->
+		<section>
+			<h3>Here is a random calculator, is this still html?</h3>
+            <div>Addding cats</div>
+            <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+                <input type="number" id="b" name="b" value="10" /> +
+                <input type="number" id="a" name="a" value="10" /> =
+                <output name="result" for="a b">20</output>
+           </form>
+            <div>Subtracting cats</div>
+            <form oninput="result.value=parseInt(a.value)-parseInt(b.value)">
+                <input type="number" id="a" name="a" value="10" /> -
+                <input type="number" id="b" name="b" value="10" /> =
+                <output name="result" for="a b">0</output>
+           </form>
+            <div>Multiplying cats</div>
+            <form oninput="result.value=parseInt(a.value)*parseInt(b.value)">
+                <input type="number" id="b" name="b" value="10" /> *
+                <input type="number" id="a" name="a" value="10" /> =
+                <output name="result" for="a b">100</output>
+           </form>
+			<div>Dividing cats</div>
+            <form oninput="result.value=parseInt(a.value)/parseInt(b.value)">
+                <input type="number" id="a" name="a" value="10" /> /
+                <input type="number" id="b" name="b" value="10" /> =
+                <output name="result" for="a b">1</output>
+           </form>
+		    <p style="font-size:48px">&#128573;</p>
+			<p style="font-size:48px">&#128576;</p>
+			<p style="font-size:48px">&#128571;</p>
+			<p style="font-size:48px">&#128572;</p>
+		</section>
+
+		<footer>
+			Jethro Infante 2022
+		</footer>
+	</body>
+</html>
