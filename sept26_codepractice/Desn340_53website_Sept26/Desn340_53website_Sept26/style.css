@@ -1,0 +1,24 @@
+/* OUR STYLE FILE: A CSS SHEET*/
+
+h1 {
+    color: red;
+}
+
+#hero {
+    font-size: 30px;
+    color: black;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    width: 50%;
+    padding: 1em;
+}
+
+h1, h2, p {
+    font-size: 15px;
+    color: white;
+}
+
+section a{
+    background-color: hotpink;
+}
