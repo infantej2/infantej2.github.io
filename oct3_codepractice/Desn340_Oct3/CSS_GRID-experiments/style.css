@@ -1,0 +1,69 @@
+/* This is our CSS file that will play with the CSS Grid technology */
+
+/* Box Model fix */
+
+html {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+/* Below is the style for our blocks */
+
+section {
+	margin: 0;
+
+	background-color: rgb(205, 92, 92);
+
+}
+
+div {
+	background-color: rgba(253,200,45);
+	margin: 0.2rem;
+	padding: 2rem;
+}
+
+article {
+	background: rgb(108,34,195);
+	background: linear-gradient(180deg, rgba(108,34,195,1) 0%, rgba(253,187,45,1) 100%);
+}
+
+
+@media (max-width: 767px) {
+	.test-grid {
+		display: block;
+	}
+}
+
+/* Below is the grid styling */
+
+
+@media only screen and (min-width: 768px) {
+	.grid-col-span-2 {
+		grid-column:  span 2;
+	}
+
+
+
+
+	.test-grid {
+		display: grid;
+		gap: 2rem;
+
+		/* grid-template-columns: 25% 25% 50%; */
+		/* grid-template-columns: 1fr 1fr 1fr 1fr; */
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		padding: 2rem;
+		width: min(95%, 70rem);
+	}
+}
+
+

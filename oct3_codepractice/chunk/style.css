@@ -1,0 +1,57 @@
+/* CSS file for the CHUNK experiment*/
+/*
+html {
+    background: rgb(88,0,135);
+    background: linear-gradient(90deg, rgba(88,0,135,1) 0%, rgba(156,44,161,1) 49%, rgba(0,255,135,1) 100%);
+}
+*/
+
+.chunk {
+    color: #fff;
+    background-color: rgb(220,99,89);
+    padding: 30px 20px;
+    padding-top: 10px;
+}
+
+.chunk a {
+    border-style: solid;
+    border-color: #fff;
+    color: #fff;
+    padding: 0.2rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+}
+
+#started {
+    background-color: #fff;
+    color: rgb(220,99,89);
+}
+
+div, p {
+    background-color: #ccc;
+    width: 50%;
+    margin: 40px;
+}
+
+h2 {
+    font-family: Arial, sans-serif;
+    font-weight: 800;
+}
+
+h5 {
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+}
+
+/* use a direct descendant here */
+span {
+    background-color: red;
+    display: block;
+    width: 25vw;
+}
+
+div > span {
+    background-color: lightblue;
+}

@@ -1,0 +1,42 @@
+/* This will be my CSS file for the CHUNK experiment */
+/* 
+body {
+	background: rgb(76,70,184);
+	background: linear-gradient(90deg, rgba(76,70,184,1) 0%, rgba(9,121,62,1) 35%, rgba(0,212,255,1) 100%);
+} */
+
+.chunk {
+	color: #fff ;
+	background-color: rgb(220, 99, 89);
+	padding:  30px 20px;
+}
+
+.chunk a {
+	border-style: solid ;
+	border-color: #fff;
+	color: #fff;
+	padding: 0.2rem 2rem;
+	text-decoration: none;
+	border-radius: 5px;
+}
+
+#started {
+	background-color: #fff;
+	color: rgb(220, 99, 89);
+}
+
+div, p {
+	background-color: #ccc;
+	width: 50%;
+	margin: 40px;
+}
+
+span {
+	background-color: red;
+	display: block;
+	width: 25vw;
+}
+
+div > span {
+	background-color: lightblue;
+}
