@@ -1,0 +1,309 @@
+/* This is the Style Sheet for our new 53 Website 
+
+H1 is GT Super Super @ 64
+
+H2 is GT Super Super @ 36
+
+H3 is Poppins Medium at 32
+
+H4 is Poppins Regular at 24
+
+H5 is Poppins Regular at 20
+
+
+Colors: ;
+
+Blue #153B84
+Orange #c2402f
+peachy #ffeae7
+gray #161616
+
+
+
+
+/* Let's create a clearly marked part of our CSS file to 
+put down all the high level and universally applied properties
+*/
+
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+@font-face {
+    font-family: "GT-Super";
+    src: url("../GT-Super/GT-Super-Display-Super.woff2");
+}
+
+
+img {
+	max-width: 100%;
+}
+
+
+
+.row:before,
+.row:after {
+	content: " ";
+	display: table;
+}
+
+.row:after {
+	clear: both;
+}
+
+/* The most representative style of your type shold be established
+ first. Then you can change it with sp[ecificity later.
+*/
+
+
+body {
+	font-family: sans-serif;
+	font-size: 24px;
+	font-weight: 400;
+	background-color: #fff;
+}
+
+
+h1 {
+	font-family: "GT-Super";
+	font-size: 60px;
+	color: #fff;
+	margin: 0;
+	/* we could also use font-size: 4rem; to get the same size. 
+	Ultimatley if we were building a site to be completely 
+	responsive then we would want to use this but I am going 
+	to use my Figma File as a refernce and they use absolute values
+	*/
+}
+
+
+h2 {
+	font-family: "GT-Super";
+	font-size: 36px;
+	margin: 0;
+}
+
+
+h3 {
+	font-family: ;
+	margin: 0;
+}
+
+h4 {
+	font-family: ;
+	font-size: ;
+	font-weight: ;
+	line-height: 1.8rem;
+	margin: 0;
+}
+
+p {
+	font-family: ;
+	font-size: ;
+	font-weight: ;
+	line-height: 1.8rem;
+	margin: 0;
+}
+
+a {
+
+}
+
+a:hover {
+
+}
+
+ul {
+	list-style-type: none;
+}
+
+li {
+	display: inline;
+}
+
+.tighten {
+	letter-spacing: -0.03em;
+}
+
+/* layout styling */
+
+.container {
+	width: 1170px;
+	margin: 0 auto;
+
+}
+
+.container-fluid {
+	width: 100%;
+	height: 70px;
+	padding-top: ;
+	padding-bottom: ;
+}
+
+.right-align {
+	
+}
+
+
+
+/* Header Styling */ 
+
+
+
+header {
+
+}
+
+
+#logo>a {
+
+}
+
+header nav {
+	
+}
+
+.nav-link {
+	
+}
+
+.nav-link a {
+	
+}
+
+#search {
+	
+}
+
+#search a {
+	
+}
+
+
+
+/* Hero/Bilboard Styling */ 
+
+
+#hero {
+	
+}
+
+#hero-chunk {
+	
+}
+
+#hero h1 {
+	
+}
+
+#hero h4 {
+	
+}
+
+a.CTA {
+	background-color: #c2402f;
+	font-family: 'Poppins', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	color: #fff;
+	padding: 1em 2.5em;
+	border-radius: 2em;
+}
+
+a.CTA:hover {
+
+}
+
+/* Mission Statement */ 
+
+#mission {
+	
+}
+
+#mission h2 {
+}
+
+#mission p {
+	
+}
+
+
+/* Splash graphic 
+Its the same as a container-fluid section 
+but it doesn't have any content*/ 
+
+#splash {
+	
+}
+
+
+/* The next style is for the cards */
+
+#cards {
+
+}
+
+
+.card-chunk h2 {
+	
+}
+
+.card-chunk p {
+
+}
+
+a.CTAtoo {
+
+}
+
+#paper {
+
+}
+
+#pencil {
+
+}
+
+/* The video comes next but its not entirely a new 
+section because it overlaps the last card */
+
+#video {
+
+}
+
+#video video {
+
+}
+
+/* The illustration in the background requires us to 
+use z-index. So we need to balance negative margin 
+and the position property.  */
+
+#illust {
+
+}
+
+#illust h6 {
+
+}
+
+#illust img{
+
+}
+
+/* The product listing at the bottom makes a 
+really good example for how CSS grid can be 
+quickly used for layouts */
+
+
+#product-grid {
+	
+}
+
+
+/* Next week we will go over the newsletter 
+sign-up and the Footer*/
+
