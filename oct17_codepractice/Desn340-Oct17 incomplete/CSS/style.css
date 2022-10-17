@@ -37,6 +37,11 @@ html {
     src: url("../GT-Super/GT-Super-Display-Super.woff2");
 }
 
+@font-face {
+    font-family: "GT-Light";
+    src: url("../GT-Super/GT-Super-Display-Regular.woff2");
+}
+
 
 img {
 	max-width: 100%;
@@ -63,7 +68,7 @@ body {
 	font-family: sans-serif;
 	font-size: 24px;
 	font-weight: 400;
-	background-color: #fff;
+	background-color: #ffeae7;
 }
 
 
@@ -93,9 +98,9 @@ h3 {
 }
 
 h4 {
-	font-family: ;
-	font-size: ;
-	font-weight: ;
+	font-family: "Poppins", sans-serif;
+	font-size: 20px;
+	font-weight: 400;
 	line-height: 1.8rem;
 	margin: 0;
 }
@@ -144,9 +149,12 @@ li {
 }
 
 .right-align {
-	
+	float: right;
 }
 
+.left-align {
+	float: left;
+}
 
 
 /* Header Styling */ 
@@ -154,28 +162,46 @@ li {
 
 
 header {
-
+	background-color: #153B84;
 }
 
-
 #logo>a {
-
+	display: inline-block;
+	width: 75px;
+	padding-top: 20px;
+	margin-left: 10px;
 }
 
 header nav {
-	
+	width: 870px;
 }
 
 .nav-link {
-	
+	margin: 10px;
 }
 
 .nav-link a {
-	
+	color: #fff;
+	text-decoration: none;
+	font-family: "Poppins", sans-serif;
+	font-size: 16px;
+	margin-left: 10px;
+}
+
+.nav-link a:hover {
+	color: rgba(255, 255, 255, 0.489);
 }
 
 #search {
-	
+	display: inline-block;
+	border-style: solid;
+	border-radius: 25px;
+	border-color: #fff;
+	padding: 16px;
+}
+
+#search:hover {
+	border-color: rgba(255, 255, 255, 0.489);
 }
 
 #search a {
@@ -188,19 +214,27 @@ header nav {
 
 
 #hero {
-	
+	height: 85vh;
+	background-image: url("../images/hero1.jpg");
+	background-size: cover;
 }
 
 #hero-chunk {
-	
+	width: 400px;
+	color: #fff;
+	margin-top: 180px;
+	margin-left: 100px;
 }
 
 #hero h1 {
-	
+	line-height: 0.5;
 }
 
 #hero h4 {
-	
+	font-size: 20px;
+	font-weight: 300px;
+	margin-top: 35px;
+	margin-bottom: 35px;
 }
 
 a.CTA {
@@ -214,20 +248,24 @@ a.CTA {
 }
 
 a.CTA:hover {
-
+	background-color: #ef5c4a;
 }
 
 /* Mission Statement */ 
 
 #mission {
-	
+	text-align: center;
+	margin: 80px auto;
+	width:680px;
+	color: #161616;
 }
 
 #mission h2 {
+	margin-top: 70px;
 }
 
-#mission p {
-	
+#mission h4 {
+	margin-top: 70px;
 }
 
 
@@ -236,46 +274,92 @@ Its the same as a container-fluid section
 but it doesn't have any content*/ 
 
 #splash {
-	
+	height: 100vw;
+	width: 100%;
+	background-image: url("../images/splash.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 
 /* The next style is for the cards */
 
 #cards {
-
+	margin-top: -475px;
 }
 
+.card-chunk {
+	margin-bottom: 20px;
+}
+
+.card-chunk span {
+	font-size: "GT-Super";
+}
 
 .card-chunk h2 {
-	
+	font-size: 34px;
+	font-family: "GT-Light";
+
 }
 
 .card-chunk p {
-
+	margin-bottom: 50px;
 }
 
 a.CTAtoo {
-
+	font-family: 'Poppins', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	color: #fff;
+	padding: 1em 2.5em;
+	border-radius: 2em;
+	border-style: solid;
 }
 
 #paper {
-
+	background-color: #161616;
+	color: #fff;
+	width: 95vw;
+	height: 720px;
+	margin: 0 auto;
+	border-radius: 20px;
+	margin-bottom: 50px;
+	border-radius: 18px;
+	display: grid;
+	grid-template-columns: 450px 670px;
+	column-gap: 30px;
+	padding: 100px;
 }
 
 #pencil {
-
+	background-color: #fff;
+	color: #161616;
+	width: 95vw;
+	height: 720px;
+	margin: 0 auto;
+	border-radius: 20px;
+	padding: 100px;
+	display: grid;
+	grid-template-columns: 670px 470px;
+	column-gap: 30px;
 }
 
 /* The video comes next but its not entirely a new 
 section because it overlaps the last card */
 
 #video {
-
+	background-color: black;
+	width: 970px;
+	margin-top: -300px;
+	margin-right: auto;
+	margin-left: auto;
+	
 }
 
 #video video {
-
+	display: block;
+	margin: 0 auto;
 }
 
 /* The illustration in the background requires us to 
@@ -283,27 +367,47 @@ use z-index. So we need to balance negative margin
 and the position property.  */
 
 #illust {
-
+	margin-top: -500px;
+	height: 570px;
+	position: relative;
+	overflow: hidden;
 }
 
 #illust h6 {
-
+	position: absolute;
+	bottom: 0;
+	right: 20px;
+	color: #fff;
+	font-size: 10px;
 }
 
 #illust img{
-
+	position: absolute;
+	z-index: -1;
 }
 
 /* The product listing at the bottom makes a 
 really good example for how CSS grid can be 
 quickly used for layouts */
 
+#product {
+	margin: 50px auto;
+}
+
 
 #product-grid {
-	
+	width: 1170px;
+	margin: 0 auto;
+	display: grid;
+	grid-gap: 30px;
+	grid-template-columns: repeat(4, 1fr);
+	text-align: center;
 }
 
 
 /* Next week we will go over the newsletter 
 sign-up and the Footer*/
 
+#newsletter {
+	height: 70vw;
+}
