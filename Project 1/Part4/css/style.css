@@ -1,0 +1,548 @@
+html {
+  scroll-behavior: smooth;
+  background-color: black;
+}
+
+body {
+  padding: 0;
+  text-align: center;
+}
+
+.slide {
+  width: 100vw;
+  height: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 725vw;
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+}
+
+
+/* Slide one styling*/
+
+.one {
+  background-image: url("../images/calgary_main.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-color: black;
+  background-position: 50% 20%;
+  position: relative;
+  width: 550vw;
+  height: 650px;
+  margin: 20px;
+}
+
+.container1 {
+  position: relative;
+  height: auto;
+}
+
+.container1-text {
+  position: fixed;
+  top: 10px;
+  left: 0px;
+  width: 200px;
+  height: 100px;
+}
+
+.container1 .title {
+  font-family: 'Georgia', serif;
+  font-weight: bold;
+  position: absolute;
+  font-size: 6vw;
+  color: black;
+  top: 50%;
+  left: 40%;
+}
+
+.container1 .subtitle {
+  font-family: 'Georgia', serif;
+  font-weight: bold;
+  position: absolute;
+  font-size: 6vw;
+  color: maroon;
+  top: 110%;
+  left: 60%;
+}
+
+
+/* Slide two styling */
+
+.two {
+  background: black;
+  width: 550vw;
+}
+
+.container2 {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  background-color: black;
+}
+.container2 iframe {
+  position: absolute;
+  top: 2%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-color: black;
+}
+
+
+/* Slide three styling */
+
+.three {
+  background-image: url("../images/calgary_tower_bg.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-color: black;
+  background-position: 50% 20%;
+  width: 600vw;
+  height: 650px;
+  position: relative;
+  margin: 20px;
+}
+
+.container3 {
+  display: grid;
+  padding: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 225px;
+  grid-gap: 20px;
+  grid-auto-flow: dense;
+  height: auto;
+  position: relative;
+  top: 5%;
+}
+
+.gallery-item3 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.gallery-item3 .image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.gallery-item3 .image img {
+  width: 100%;
+  height: auto;
+  position: 50% 20%;
+  display: block;
+  filter: blur(0) brightness(100%);
+  -webkit-filter: blur(0) brightness(100%);
+}
+
+.gallery-item3:hover .image img {
+  filter: blur(3px) brightness(70%);
+  -webkit-filter: blur(3) brightness(70%);
+}
+
+.gallery-item3 .title1 {
+  opacity: 1;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: bold;
+  font-size: 7vw;
+  color: #fff;
+}
+
+.gallery-item3 .text {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-family: 'Georgia', serif;
+  font-size: 2vw;
+}
+
+.gallery-item3:hover .text {
+  opacity: 1;
+  padding: 1em;
+  width: 100%;
+}
+
+
+/* Slide four styling */
+
+.four {
+  background-image: url("../images/calgary_peace_bg.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-color: black;
+  background-position: 80% 80%;
+  width: 600vw;
+  height: 650px;
+  position: relative;
+  margin: 20px;
+}
+
+.container4 {
+  display: grid;
+  padding: 30px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 275px 250px;
+  grid-gap: 20px;
+  grid-auto-flow: dense;
+  height: auto;
+  position: relative;
+}
+
+.gallery-item4 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.gallery-item4 .image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.gallery-item4 .title1 {
+  opacity: 1;
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: bold;
+  font-size: 7vw;
+  color: #fff;
+}
+
+.gallery-item4 .text {
+  position: absolute;
+  top: 45%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-family: 'Georgia', serif;
+  font-size: 1.7vw;
+}
+
+/* Slide five styling */
+
+.five {
+  background-image: url("../images/calgary_sculpture_bg.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-color: black;
+  background-position: 50% 20%;
+  width: 600vw;
+  height: 650px;
+  position: relative;
+  margin: 20px;
+}
+
+.container5 {
+  display: grid;
+  padding: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 225px;
+  grid-gap: 20px;
+  grid-auto-flow: dense;
+  height: auto;
+  position: relative;
+  top: 5%;
+}
+
+.gallery-item5 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.gallery-item5 .image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.gallery-item5 .image img {
+  width: 100%;
+  height: auto;
+  position: 50% 20%;
+  display: block;
+  filter: blur(0) brightness(100%);
+  -webkit-filter: blur(0) brightness(100%);
+}
+
+.gallery-item5:hover .image img {
+  filter: blur(3px) brightness(70%);
+  -webkit-filter: blur(3) brightness(70%);
+}
+
+.gallery-item5 .title1 {
+  opacity: 1;
+  position: absolute;
+  top: 70%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: bold;
+  font-size: 7vw;
+  color: #fff;
+}
+
+.gallery-item5 .text {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-family: 'Georgia', serif;
+  font-size: 1.7vw;
+}
+
+.gallery-item5:hover .text {
+  opacity: 1;
+  padding: 1em;
+  width: 100%;
+}
+
+
+
+/* Slide six styling */
+
+.six {
+  background: black;
+  width: 600vw;
+  height: 650px;
+}
+
+.container6 {
+  display: grid;
+  padding: 30px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 125px 100px 100px;
+  grid-gap: 20px;
+  grid-auto-flow: dense;
+  height: auto;
+}
+
+.gallery-item6 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.gallery-item6 .image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transition: transform .5s;
+}
+
+.gallery-item6 .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: blur(3px) brightness(70%);
+  -webkit-filter: blur(3) brightness(70%);
+}
+
+.gallery-item6:hover .image img {
+  filter: blur(0) brightness(100%);
+  -webkit-filter: blur(0) brightness(100%);
+}
+
+.gallery-item6:hover .image {
+  transform: scale(1.025);
+}
+
+.gallery-item6 .text {
+  opacity: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-family: 'Georgia', serif;
+  font-size: 1.8vw;
+  pointer-events: none;
+  z-index: 4;
+  transition: .3s ease-in-out;
+}
+
+.gallery-item6:hover .text {
+  opacity: 0;
+  animation: move-up .3s linear;
+  padding: 1em;
+  width: 100%;
+}
+
+
+/* Slide seven styling*/
+
+.seven {
+  background-image: url("../images/calgary_last.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-color: black;
+  background-position: 50% 20%;
+  position: relative;
+  width: 550vw;
+  height: 650px;
+  margin: 20px;
+  filter: blur(0) brightness(100%);
+  -webkit-filter: blur(0) brightness(100%);
+}
+
+.seven:hover {
+  transform: scale(1.025);
+  transition: transform .5s;
+}
+
+.container7 {
+  position: relative;
+  height: auto;
+}
+
+.container7-text {
+  top: 10px;
+  left: 0px;
+  width: 200px;
+  height: 100px;
+}
+
+.container7 .title {
+  font-family: 'Georgia', serif;
+  font-weight: bold;
+  position: absolute;
+  font-size: 4vw;
+  color: black;
+  top: 110%;
+  left: 27%;
+}
+
+.container7 .subtitle {
+  font-family: 'Georgia', serif;
+  position: absolute;
+  font-size: 5vw;
+  color: maroon;
+  top: 175%;
+  left: 15%;
+}
+
+
+
+/** Grids */
+
+.w-1 {
+  grid-column: span 1;
+}
+
+.w-2 {
+  grid-column: span 2;
+}
+
+.w-3 {
+  grid-column: span 3;
+}
+
+.w-4 {
+  grid-column: span 4;
+}
+
+.w-5 {
+  grid-column: span 5;
+}
+
+.w-6 {
+  grid-column: span 6;
+}
+
+.h-1 {
+  grid-row: span 1;
+}
+
+.h-2 {
+  grid-row: span 2;
+}
+
+.h-3 {
+  grid-row: span 3;
+}
+
+.h-4 {
+  grid-row: span 4;
+}
+
+.h-5 {
+  grid-row: span 5;
+}
+
+.h-6 {
+  grid-row: span 6;
+}
+
+
+/** Animations */
+
+@media screen and (max-width:500px) {
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .w-1,
+  .w-2,
+  .w-3,
+  .w-4,
+  .w-5,
+  .w-6 {
+    grid-column: span 1;
+  }
+}
+
+@keyframes move-up {
+
+  0% {
+    top: 50%;
+  }
+
+  50% {
+    top: 35%;
+  }
+
+  100% {
+    top: 0%;
+  }
+}
+
+
+/* Horizontal scrollbar*/
+
+.outer-wrapper {
+  width: 100vh;
+  height: 100vw;
+  transform: rotate(-90deg) translateX(-100vh);
+  transform-origin: top left;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
