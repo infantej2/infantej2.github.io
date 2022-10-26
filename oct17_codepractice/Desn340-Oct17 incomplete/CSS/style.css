@@ -411,3 +411,11 @@ sign-up and the Footer*/
 #newsletter {
 	height: 70vw;
 }
+
+.btn-primary {
+	background-color: pink;
+}
+
+.btn-primary:hover {
+	background-color: darkmagenta;
+}
