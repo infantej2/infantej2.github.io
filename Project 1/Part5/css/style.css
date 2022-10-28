@@ -1,8 +1,10 @@
-head {
-    padding-bottom: 30px;
-}
+
 
 body {
     padding: 15px;
-    background-color: #FFCBA4;
+    background-color: #fff;
+}
+
+.hero {
+    color: #fff;
 }
