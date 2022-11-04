@@ -1,0 +1,107 @@
+/* Hero/Bilboard Styling */ 
+
+
+#hero {
+	background-image: url("../images/hero1.jpg");
+	background-size: cover;
+	background-color: red;
+	height: 50vh;
+}
+
+#hero-chunk {
+	width: auto;
+	color: #fff;
+	margin-top: 150px;
+	margin-left: 100px;
+    text-align: left;
+}
+
+
+#hero h1 {
+	padding-bottom: 16px;
+}
+
+#hero h4 {
+	padding-bottom: 30px;
+}
+
+
+/* Video styling */ 
+
+#video1 {
+	width: 75%;
+    padding: 10px;
+    margin: 5% auto;
+    position: relative;
+
+}
+
+#video1 video {
+    position: absolute;
+    width: auto;
+}
+
+
+
+.container {
+	width: 75%;
+	border-radius: 20px;
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#ideas {
+	color: black;
+	width: auto;
+	height: 40vh;
+	margin: 0 auto;
+	border-radius: 20px;
+    margin-top: 500px;
+	display: grid;
+	grid-template-columns: 30vw 30vw;
+	column-gap: 30px;
+}
+
+#freedom {
+	color: black;
+	width: auto;
+	height: 40vh;
+	margin: 0 auto;
+	border-radius: 20px;
+	margin-bottom: 50px;
+	display: grid;
+	grid-template-columns: 30vh 30vh;
+	column-gap: 30px;
+}
+
+.desc span {
+	font-family: "GT-Light";
+	font-size: 34px;
+}
+
+.desc h2 {
+	margin: 50px 0;
+}
+
+.desc p {
+	margin-bottom: 50px;
+}
+
+#carousel {
+    background-color: black;
+    background-size: repeat;
+}
+
+#three {
+	color: black;
+	width: auto;
+	height: 40vh;
+	margin: 0 auto;
+	border-radius: 20px;
+	margin-bottom: 50px;
+	display: grid;
+	grid-template-columns: 30vh 30vh 30vh;
+	column-gap: 30px;
+}

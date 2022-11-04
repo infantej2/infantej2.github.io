@@ -1,0 +1,49 @@
+/* Hero/Bilboard Styling */ 
+
+
+#hero {
+	background-image: url("../images/hero2.jpg");
+	background-size: cover;
+	background-color: red;
+	height: 50vh;
+}
+
+#hero-chunk1 {
+	width: auto;
+	color: #fff;
+	margin-top: 150px;
+	margin-left: 100px;
+    text-align: left;
+}
+
+#hero-chunk2 {
+	width: auto;
+	color: #fff;
+	margin-top: 150px;
+	margin-right: 100px;
+    text-align: right;
+}
+
+
+#hero h1 {
+	padding-bottom: 16px;
+}
+
+#hero h4 {
+	padding-bottom: 30px;
+}
+
+/* About/Description Styling */ 
+
+#about {
+	text-align: left;
+	color: #161616;
+	width: 50vw;
+	margin: 80px auto;
+	margin-bottom: 320px;
+	padding-bottom: 40px;
+}
+
+#about h4 {
+	padding-bottom: 60px;
+}

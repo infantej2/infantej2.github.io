@@ -62,7 +62,7 @@ img {
 }
 
 /* The most representative style of your type shold be established
- first. Then you can change it with sp[ecificity later.
+ first. Then you can change it with specificity later.
 */
 
 
@@ -146,8 +146,6 @@ li {
 .container-fluid {
 	width: 100%;
 	height: 70px;
-	padding-top: ;
-	padding-bottom: ;
 }
 
 .right-align {
@@ -188,10 +186,10 @@ header nav {
 	font-size: 14px;
 	font-weight: 400;
 	color: #fff;
-
 	margin-right: 0;
 	margin-left: 10px;
 	padding: 10px 20px;
+	text-decoration: none;
 }
 
 #search {
@@ -372,9 +370,6 @@ a.CTAtoo {
 
 }
 
-
-
-
 #product-grid {
 	width: 1170px;
 	margin: 0 auto;
@@ -383,6 +378,17 @@ a.CTAtoo {
 	grid-template-columns: repeat(4, 1fr);
 	text-align: center;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
