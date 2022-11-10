@@ -29,7 +29,7 @@
 /* Video styling */ 
 
 #video1 {
-	width: 75%;
+	width: 100vw;
     padding: 10px;
     margin: 5% auto;
     position: relative;
@@ -38,7 +38,7 @@
 
 #video1 video {
     position: absolute;
-    width: auto;
+    width: 70%;
 }
 
 
@@ -64,15 +64,19 @@
 	column-gap: 30px;
 }
 
+#contfreedom {
+	margin-top: 20px;
+}
+
 #freedom {
 	color: black;
-	width: auto;
+	width: 120%;
 	height: 40vh;
 	margin: 0 auto;
 	border-radius: 20px;
 	margin-bottom: 50px;
 	display: grid;
-	grid-template-columns: 30vh 30vh;
+	grid-template-columns: 40vh 40vh;
 	column-gap: 30px;
 }
 
@@ -90,8 +94,38 @@
 }
 
 #carousel {
-    background-color: black;
+	background-color: black;
     background-size: repeat;
+	background-size: cover;
+	margin-top: 150px;
+}
+
+#carousel-img {
+
+}
+
+#black {
+    background-color: black;
+	padding-bottom:0;
+}
+
+#inner {
+	margin-top:0;
+	margin-bottom:0;
+}
+
+
+#black .desc{
+	color: #fff;
+	margin-top: 0;
+}
+
+#black img{
+	width: 200px;
+}
+
+#two {
+	text-align: center;
 }
 
 #three {
@@ -100,8 +134,19 @@
 	height: 40vh;
 	margin: 0 auto;
 	border-radius: 20px;
-	margin-bottom: 50px;
+	margin-bottom: 500px;
+	padding-bottom: 100px;
 	display: grid;
 	grid-template-columns: 30vh 30vh 30vh;
 	column-gap: 30px;
+}
+
+#three h2{
+	margin-bottom: 0;
+	margin-top:0;
+	text-align:center;
+}
+
+.jumbotron {
+
 }
