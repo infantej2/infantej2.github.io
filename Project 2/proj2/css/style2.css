@@ -11,17 +11,27 @@
 #hero-chunk1 {
 	width: auto;
 	color: #fff;
-	margin-top: 2%;
-	margin-left: 10%;
+	margin-top: 11%;
+	margin-left: 20%;
     text-align: left;
 }
 
 #hero-chunk2 {
 	width: auto;
 	color: #fff;
-	margin-top: 2%;
-	margin-right: 10%;
+	margin-top: 8%;
+	margin-left: 40%;
     text-align: right;
+}
+
+#hero-chunk1 .tighten {
+	font-family: 'Poppins';
+	font-weight: 600;
+}
+
+#hero-chunk2 .tighten {
+	font-family: 'Poppins';
+	font-weight: 600;
 }
 
 
@@ -39,11 +49,8 @@
 	text-align: left;
 	color: #161616;
 	width: 50vw;
-	margin: 80px auto;
-	margin-bottom: 320px;
+	margin: 60px auto;
+	margin-bottom: 160px;
+	margin-top: 120px;
 	padding-bottom: 40px;
-}
-
-#about h4 {
-	padding-bottom: 60px;
 }

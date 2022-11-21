@@ -1,6 +1,5 @@
 /* Hero/Bilboard Styling */ 
 
-
 #hero {
 	background-image: url("../images/hero1.jpg");
 	background-size: cover;
@@ -12,10 +11,13 @@
 	width: auto;
 	color: #fff;
 	margin-top: 150px;
-	margin-left: 100px;
-    text-align: left;
+	margin-left: 600px;
+	text-align: center;
 }
 
+#hero-chunk .tighten{
+	text-align: right;
+}
 
 #hero h1 {
 	padding-bottom: 16px;
@@ -26,14 +28,16 @@
 }
 
 
+
 /* Video styling */ 
 
 #video1 {
 	width: 100vw;
     padding: 10px;
     margin: 5% auto;
+	margin-top: 100px;
     position: relative;
-
+	margin-left: 10%;
 }
 
 #video1 video {
@@ -43,14 +47,7 @@
 
 
 
-.container {
-	width: 75%;
-	border-radius: 20px;
-    padding: 10px;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-}
+/* Ideas */
 
 #ideas {
 	color: black;
@@ -58,11 +55,21 @@
 	height: 40vh;
 	margin: 0 auto;
 	border-radius: 20px;
-    margin-top: 500px;
+    margin-top: 600px;
+	margin-left: 180px;
+	margin-right: 180px;
 	display: grid;
 	grid-template-columns: 30vw 30vw;
 	column-gap: 30px;
 }
+
+#ideas img {
+	margin-top: 70px;
+}
+
+
+
+/* Freedom */
 
 #contfreedom {
 	margin-top: 20px;
@@ -75,10 +82,20 @@
 	margin: 0 auto;
 	border-radius: 20px;
 	margin-bottom: 50px;
+	margin-left: 180px;
+	margin-right: 180px;
 	display: grid;
 	grid-template-columns: 40vh 40vh;
 	column-gap: 30px;
 }
+
+#freedom img {
+	margin-top: 70px;
+}
+
+
+
+/* Carousel */
 
 .desc span {
 	font-family: "GT-Light";
