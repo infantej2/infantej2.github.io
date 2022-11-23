@@ -1,149 +1,145 @@
+body {
+	font-family: sans-serif;
+	font-size: 24px;
+	font-weight: 400;
+	background-color: #FEFCF9;
+}
+
+
 /* Hero/Bilboard Styling */ 
 
-#hero {
+#hero-vid {
+	height: 90vh;
+	background-color: black;
+	background-size: cover;
+}
+#video {
+    z-index:1;
+	flex-direction: column;
+	top:50px;
+	height: 80%;
+	width: 100%;
+	margin-top: 120px;
+	justify-content: center;
+	align-items: center;
+}
+.overlay {
+	display: flex;
+	flex-direction: column;
+	margin-top: -32vh;
+	width: 100%;
+	height: 60vh;
+	justify-content: center;
+	align-items: left;
+    z-index:2;
+	opacity: 0;
+    animation: fadeIn 3s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
 	background-image: url("../images/hero1.jpg");
 	background-size: cover;
-	background-color: red;
-	height: 50vh;
+	background-position: center;
+	color: #FFF;
+	border-radius: 5px;
 }
 
-#hero-chunk {
-	width: auto;
-	color: #fff;
-	margin-top: 150px;
-	margin-left: 600px;
-	text-align: center;
+.overlay .title {
+	font-family: 'Poppins';
+	color: #FFF;
+	font-weight: 600;
+	font-size: 150px;
 }
-
-#hero-chunk .tighten{
-	text-align: right;
+  
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
-
-#hero h1 {
-	padding-bottom: 16px;
-}
-
-#hero h4 {
-	padding-bottom: 30px;
-}
-
-
-
-/* Video styling */ 
-
-#video1 {
-	width: 100vw;
-    padding: 10px;
-    margin: 5% auto;
-	margin-top: 100px;
-    position: relative;
-	margin-left: 10%;
-}
-
-#video1 video {
-    position: absolute;
-    width: 70%;
-}
-
-
-
-/* Ideas */
-
-#ideas {
-	color: black;
-	width: auto;
-	height: 40vh;
-	margin: 0 auto;
-	border-radius: 20px;
-    margin-top: 600px;
-	margin-left: 180px;
-	margin-right: 180px;
-	display: grid;
-	grid-template-columns: 30vw 30vw;
-	column-gap: 30px;
-}
-
-#ideas img {
-	margin-top: 70px;
-}
-
-
 
 /* Freedom */
 
+#pencil {
+	background-image: url("../images/download.jpg");
+	background-size: cover;
+	background-position: center;
+	background-color: red;
+	height: 60vh;
+}
+
 #contfreedom {
-	margin-top: 20px;
+	padding-top: 120px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
 }
 
 #freedom {
 	color: black;
-	width: 120%;
+	width: 80%;
 	height: 40vh;
 	margin: 0 auto;
 	border-radius: 20px;
-	margin-bottom: 50px;
-	margin-left: 180px;
-	margin-right: 180px;
-	display: grid;
-	grid-template-columns: 40vh 40vh;
-	column-gap: 30px;
-}
-
-#freedom img {
-	margin-top: 70px;
+	text-align: center;
 }
 
 
 
 /* Carousel */
 
-.desc span {
-	font-family: "GT-Light";
-	font-size: 34px;
-}
-
-.desc h2 {
-	margin: 50px 0;
-}
-
-.desc p {
-	margin-bottom: 50px;
-}
-
 #carousel {
-	background-color: black;
-    background-size: repeat;
-	background-size: cover;
-	margin-top: 150px;
+	padding-bottom: 60px;
 }
 
-#carousel-img {
+.carousel-control-next {
+	left: 92%;
+}
 
+.carousel-control-prev {
+	left: -7%;
 }
 
 #black {
-    background-color: black;
-	padding-bottom:0;
+	background-color: black;
+	padding: 20px;
+	border-radius: 15px;
 }
 
-#inner {
-	margin-top:0;
-	margin-bottom:0;
+.image-carousel {
+	width: 30vw;
+	height: 30vw;
+	border-radius: 5px;
+}
+
+.grid-layout {
+	width: 100%;
+    display: grid;
+  	grid-template-columns: 35vw 35vw;
+	padding: 10px;
+	grid-gap: 20px;
+}
+
+.grid-item {
+	text-align: center;
+	padding: 20px;
+}
+
+#item-layout {
+	text-align: left;
+	margin-left: 60px;
+	margin-top: 60px;
+	color: #FFF;
 }
 
 
-#black .desc{
-	color: #fff;
-	margin-top: 0;
-}
-
-#black img{
-	width: 200px;
-}
+/* Styling for simply works */
 
 #two {
 	text-align: center;
 }
+
+
+/* Styling for the three features */
 
 #three {
 	color: black;
@@ -162,8 +158,4 @@
 	margin-bottom: 0;
 	margin-top:0;
 	text-align:center;
-}
-
-.jumbotron {
-
 }

@@ -1,56 +1,127 @@
-/* Hero/Bilboard Styling */ 
 
+
+
+/* Hero/Bilboard Styling */ 
 
 #hero {
 	background-image: url("../images/hero2.jpg");
 	background-size: cover;
+	background-position: center;
 	background-color: red;
-	height: 50vh;
+	height: 60vh;
 }
 
 #hero-chunk1 {
-	width: auto;
-	color: #fff;
-	margin-top: 11%;
-	margin-left: 20%;
-    text-align: left;
+	display: flex;
+	flex-direction: column;
+	height: 115%;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
 }
 
-#hero-chunk2 {
-	width: auto;
-	color: #fff;
-	margin-top: 8%;
-	margin-left: 40%;
-    text-align: right;
-}
-
-#hero-chunk1 .tighten {
+#hero-chunk1 .word {
 	font-family: 'Poppins';
 	font-weight: 600;
-}
-
-#hero-chunk2 .tighten {
-	font-family: 'Poppins';
-	font-weight: 600;
+	color: #fff;
+	font-size: 200px;
 }
 
 
-#hero h1 {
-	padding-bottom: 16px;
-}
-
-#hero h4 {
-	padding-bottom: 30px;
-}
-
-/* About/Description Styling */ 
+/* Grid Styling */ 
 
 #about {
 	text-align: left;
 	color: #161616;
-	width: 50vw;
+	width: 90vw;
 	margin: 60px auto;
 	margin-bottom: 160px;
 	margin-top: 120px;
 	padding-bottom: 40px;
+}
+
+.grid-container {
+	width: 100%;
+    display: grid;
+  	grid-template-columns: 30vw 45vw;
+	padding: 10px;
+	grid-gap: 90px;
+}
+
+.grid-item {
+	text-align: center;
+	padding: 20px;
+}
+
+
+/* Description Styling */ 
+
+#description {
+	padding: 70px;
+	border: solid;
+	background-color: rgb(255, 176, 176); /* i dont like this colour */
+	border-radius:15px;
+	border-color: #ffeae7;
+}
+
+
+/* Animation Styling */ 
+
+@keyframes showTopText {
+  0% { transform: translate3d(0, 100%, 0); }
+  40%, 60% { transform: translate3d(0, 50%, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+@keyframes showBottomText {
+  0% { transform: translate3d(0, -100%, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+.animated-title {
+  color: #222;
+  height: 90vmin;
+  left: 27%;
+  position: absolute;
+  top: 115%;
+  transform: translate(-50%, -50%);
+  width: 20%;
+  text-align: center;
+}
+.animated-title > div {
+  height: 50%;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+}
+.animated-title > div div {
+  font-size: 50px;
+  padding: 2vmin 0;
+  position: absolute;
+}
+.animated-title > div div span {
+  display: block;
+}
+.animated-title > div.text-top {
+  border-bottom: 1vmin solid #000;
+  top: 0;
+}
+.animated-title > div.text-top div {
+  animation: showTopText 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  bottom: 0;
+  transform: translate(0, 100%);
+}
+.animated-title > div.text-top div span {
+  color: #767676;
+}
+.animated-title > div.text-bottom {
+  bottom: 0;
+  font-weight: 600;
+}
+.animated-title > div.text-bottom div {
+  animation: showBottomText 0.5s;
+  animation-delay: 1.75s;
+  animation-fill-mode: forwards;
+  top: 0;
+  transform: translate(0, -100%);
 }
