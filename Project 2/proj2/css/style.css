@@ -116,7 +116,7 @@ h5 {
 
 p {
 	font-family: 'Poppins', sans-serif;
-	font-size: 16px;
+	font-size: 18px;
 	font-weight: 300;
 	line-height: 1.8rem;
 	margin: 0;
@@ -138,6 +138,7 @@ ul {
 
 .tighten {
 	letter-spacing: -0.03em;
+	font-weight: 500;
 }
 
 /* header styles and rules */
@@ -194,15 +195,16 @@ header ul {
 /* homepage hero styles and rules */
 
 #hero {
-	background-image: url("../images/hero1.jpg");
+	background-image: url("../images/hero-1.jpg");
 	background-size: cover;
 	background-color: red;
+	background-position: center;
 	height: 90vh;
 }
 
 #hero-chunk {
 	width: 400px;
-	color: #fff;
+	color: #c2402f;
 	margin-top: 200px;
 	margin-left: 100px;
 }
