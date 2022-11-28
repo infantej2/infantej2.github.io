@@ -1,83 +1,69 @@
-body {
-	font-family: sans-serif;
-	font-size: 24px;
-	font-weight: 400;
-	background-color: #FEFCF9;
-}
 
 
 /* Hero/Bilboard Styling */ 
 
 #hero-vid {
-	height: 90vh;
-	background-color: black;
-	background-size: cover;
-}
-#video {
-    z-index:1;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	flex-direction: column;
-	top:50px;
-	height: 80%;
+}
+
+#stuff {
+	margin-top: 10px;
+	background-color: black;
+	border-radius: 15px;
+	width: 80%;
+}
+
+#video {
+	flex-direction: column;
+	margin-top: 10px;
+	justify-content: center;
+	align-items: center;
+	width: 55vw;
+	border-radius: 10px;
+}
+
+.hgrid-layout {
 	width: 100%;
-	margin-top: 120px;
+    display: grid;
+  	grid-template-columns: 20vw 40vw;
+	grid-template-rows: 70vh;
+	padding: 10px;
+	grid-gap: 40px;
+}
+
+.hgrid-item {
+	text-align: center;
+	padding: 20px;
+}
+
+#hitem-layout {
+	margin-left: 40px;
+	margin-top: 190px;
+	color: #FFF;
 	justify-content: center;
 	align-items: center;
 }
-.overlay {
-	display: flex;
-	flex-direction: column;
-	margin-top: -32vh;
-	width: 100%;
-	height: 60vh;
-	justify-content: center;
-	align-items: left;
-    z-index:2;
-	opacity: 0;
-    animation: fadeIn 3s;
-    animation-delay: 69s;
-    animation-fill-mode: forwards;
-	background-image: url("../images/hero1.jpg");
-	background-size: cover;
-	background-position: center;
-	color: #FFF;
-	border-radius: 5px;
-}
 
-.overlay .title {
-	font-family: 'Poppins';
-	color: #FFF;
-	font-weight: 600;
-	font-size: 150px;
-}
-  
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
 
-/* Freedom and Simply Works*/
-
-#pencil {
-	background-image: url("../images/download.jpg");
-	background-size: cover;
-	background-position: center;
-	background-color: red;
-	height: 60vh;
-}
+/* Freedom */
 
 #contfreedom {
-	padding-top: 120px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	width: 100%;
+	padding-top: 50px;
 }
 
 #freedom {
 	color: black;
 	width: 80%;
-	height: 40vh;
+	height: 35vh;
 	margin: 0 auto;
 	border-radius: 20px;
 	text-align: center;
@@ -92,11 +78,11 @@ body {
 }
 
 .carousel-control-next {
-	left: 92%;
+	left: 90%;
 }
 
 .carousel-control-prev {
-	left: -7%;
+	left: -5%;
 }
 
 #black {
@@ -114,9 +100,9 @@ body {
 .grid-layout {
 	width: 100%;
     display: grid;
-  	grid-template-columns: 35vw 35vw;
+  	grid-template-columns: 35vw 25vw;
 	padding: 10px;
-	grid-gap: 20px;
+	grid-gap: 40px;
 }
 
 .grid-item {
@@ -126,9 +112,70 @@ body {
 
 #item-layout {
 	text-align: left;
-	margin-left: 60px;
-	margin-top: 60px;
+	margin-right: 40px;
+	margin-top: 150px;
 	color: #FFF;
+}
+
+#carousel-img {
+	margin-left: 50px;
+	padding: 60px;
+}
+
+
+/* Simply works */
+
+#cont-simply {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	padding-top: 100px;
+}
+
+#simply {
+	color: black;
+	width: 80%;
+	height: 35vh;
+	margin: 0 auto;
+	border-radius: 20px;
+	text-align: center;
+}
+
+
+/* Divider */
+
+#divider {
+	height: 80vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 100px;
+	margin-top: -40px;
+}
+
+.overlay {
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+	height: 80vh;
+	justify-content: center;
+	align-items: left;
+    animation-fill-mode: forwards;
+	background-image: url("../images/hero1.jpg");
+	background-size: 100%;
+	background-position: bottom 50% left 130%;
+	background-repeat: no-repeat;
+	color: #FFF;
+	border-radius: 15px;
+}
+
+.overlay .title {
+	color: #FFF;
+	font-weight: 600;
+	font-size: 150px;
 }
 
 
@@ -164,8 +211,4 @@ body {
 .desc {
 	padding: 50px;
 	padding-bottom: 20px;
-	border: solid;
-	border-radius: 15px;
-	border-color: #FFF;
-	background-color: #ffeae7;
 }
