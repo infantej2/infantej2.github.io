@@ -1,0 +1,293 @@
+/* Universal */
+
+body {
+    background-color: #FFE5E5;
+
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    letter-spacing: 0.08em;
+}
+
+h1 {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    letter-spacing: 0.08em;
+}
+
+h2 {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    letter-spacing: 0.08em;
+}
+
+h3 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    letter-spacing: 0.08em;
+}
+
+.title {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    letter-spacing: 0.08em;
+}
+
+.content {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    letter-spacing: 0.08em;
+}
+
+#button {
+    border: solid #FFFBC1;
+    background-color: #FFFBC1;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+#opposite {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Header */
+
+#navbar {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: #F7A4A4;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#navbar-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 15vw;
+    padding-right: 15vw;
+}
+
+#nav-parent {
+    text-align: center;
+}
+
+#nav-child {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.navbar-toggler {
+    max-width: 50px;
+}
+
+#nav-space {
+    margin-left: 1vw;
+}
+
+#down {
+    margin-top: 3px;
+}
+
+#navbarTogglerDemo02 {
+    padding-left: 30vw;
+}
+
+@media only screen and (max-width: 1500px) {
+    #navbarTogglerDemo02 {
+        padding-left: 10vw;
+    }
+  }
+
+@media only screen and (max-width: 600px) {
+    #navbar-items {
+        padding-left: 20vw;
+    }
+  }
+
+/* Hero */
+#hero {
+    background-image: url("images/liana-mikah-4RTAF3Z-0zM-unsplash.jpg");
+    background-size: cover;
+	background-color: #F7A4A4;
+    background-repeat: no-repeat;
+	background-position: center;
+	height: 90vh;
+}
+
+.hero-title {
+    margin-top: 50vh;
+    color: #FFF;
+    padding-left: 5vw;
+}
+
+@media only screen and (max-width: 600px) {
+    .hero-title {
+        margin-top: 35vh;
+        color: #FFF;
+        font-size: 50px;
+        padding-left: 17vw;
+    }
+
+    #hero {
+        height: 60vh;
+    }
+  }
+
+
+/* Location */
+#location {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    color: #FFF;
+}
+
+.location-container {
+    height: 70vh;
+}
+
+#location-image {
+    height: 70vh;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.location-description {
+    opacity: 0;
+    z-index: 3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.location-container:hover .location-description {
+    opacity: 1;
+}
+
+.location-container:hover #location-image {
+    filter: brightness(50%);
+}
+
+@media only screen and (max-width: 600px) {
+    #location {
+        height: 60vh;
+    }
+
+    #location-image {
+        height: 40vh;
+    }
+  }
+
+
+/* Animation */
+#animation {
+    height: 100vh;
+}
+
+#animate {
+    -webkit-animation: mover 1.5s infinite  alternate;
+    animation: mover 1.5s infinite  alternate;
+}
+
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-40px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-40px); }
+}
+
+
+/* About */
+#about {
+    height: 100vh;
+    background-color: #F7A4A4;
+}
+
+
+/* Carousel */
+#carousel {
+    height: 100vh;
+}
+
+#carousel-wrapper {
+    height: 200px;
+    width: 50%;
+}
+
+
+/* Crayons */
+#crayons {
+    height: 100vh;
+    background-color: #F7A4A4;
+}
+
+
+/* Hover */
+#hover {
+    height: 100vh;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 30vw 30vw 30vw;
+    grid-template-rows: 400px 1000px;
+    grid-template-areas:
+        "one two three"
+        "four four four";
+}
+
+.item-one {
+    grid-area: one;
+    width: 70vw;
+}
+
+.item-two {
+    grid-area: two;
+}
+
+.item-three {
+    grid-area: three;
+}
+
+.item-four {
+    grid-area: four;
+}
+
+/* Footer */
+#footer {
+    height: 50vh;
+    margin-bottom: 0;
+    background-color: #F7A4A4;
+}
+
+
+/* Menu */

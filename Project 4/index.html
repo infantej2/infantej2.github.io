@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- The title of the site -->
+  <title>Little Ghost Cafe</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Georgia&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+
+<!-- ********************* Below here starts the code that will show up in the browser -->
+
+<body>
+  <!-- The header section -->
+  <header id="navbar">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="opposite" style="background-color: #F7A4A4;">
+      <div id="navbar-items" style="background-color: #F7A4A4;">
+        <div class="row">
+          <a class="navbar-brand" href="#hero">
+            <div id="nav-parent">
+              <img id="nav-child" src="images/Ghost_Logo_White.svg" alt="nav logo" width="40" />
+              <div class="title" id="nav-child">Little Ghost</div>
+            </div>
+          </a>
+        </div>
+        
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <li class="nav-item active" id="nav-space">
+                <a class="nav-link active" id="down"href="#location">
+                  <div>Location</div>
+                </a>
+              </li>
+              <li class="nav-item" id="nav-space">
+                <a class="nav-link active" id="down" href="#about">
+                  <div>About</div>
+                </a>
+              </li>
+              <li class="nav-item" id="nav-space">
+                <a class="nav-link active" id="down" href="#carousel">
+                  <div>Products</div>
+                </a>
+              </li>
+              <li class="nav-item" id="nav-space" style="width: 160px;">
+                <a class="nav-link active" id="button" href="#footer">
+                  <div>Contact Us</div>
+                </a>
+              </li>
+            </ul>
+          </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container-fluid" id="hero">
+    <div class="container">
+      <h1 class="hero-title">
+        Crayons and Coffee
+      </h1>
+    </div>
+  </div>
+
+  <section class="container-fluid" id="location">
+    <div class="location-container">
+      <div class="location-description">
+        <div>Serving coffee Weekdays 10am-4-m Weekends 8am-6pm</div>
+        <br/>
+        <div>Our current location is:</div>
+        <div>110373-47 False Creek Edmonton, Alberta</div>
+        <a href="https://www.google.ca/maps/search/110373-47+False+Creek+Edmonton,+Alberta/@53.5266355,-113.8223635,10z/data=!3m1!4b1?hl=en" style="text-decoration: none;">
+          <div id="button" style="width: 190px; color: black;">Google Maps</div>
+        </a>
+      </div>
+      <img id="location-image" src="images/brooke-cagle-g1Kr4Ozfoac-unsplash.jpg"/>
+    </div>
+  </section>
+
+  <section class="container-fluid" id="animation">
+    <img src="images/Ghost_logo.svg" id="animate" width="200" />
+    
+  </section>
+
+  <section class="container-fluid" id="about">
+    <div>
+      <div>Who are we?</div>
+      <div>
+        We are a small pop-up crayon cafe business.
+        About once per season we set up a little Cafe
+        in an interesting location for a week. We focus
+        on creating pleasant atmospheres in unique
+        places. Come find us!
+      </div>
+    </div>
+  </section>
+
+  <section class="container-fluid" id="carousel">
+    <div id="carousel-wrapper">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/pexels-marta-dzedyshko-7421217.jpg" class="d-block w-100 " width="50" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/diliara-garifullina-Gx_vsiMRgzk-unsplash.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/fahmi-fakhrudin-nzyzAUsbV0M-unsplash.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="container-fluid" id="crayons">
+    <div>
+      <div>Our crayons</div>
+      <div>
+        To help foster creative conversation, all of our
+        tables are covered in paper and we make
+        custom scented crayons for people to draw
+        with as they talk and drink their coffee.
+      </div>
+
+    </div>
+  </section>
+
+  <section class="container" id="hover">
+    <div class="container">
+      <div class="item-one">
+        <img src="images/Alex_Stewart_Minimal_japanese_crayon_packaging_Muji_89972a43-4984-4d91-9ea6-3ead1d71271d.png"
+          width="300" />
+      </div>
+      <div class="item-two">
+        <img src="images/Alex_Stewart_Minimal_japanese_crayon_packaging_Muji_c12fc88d-28e5-400a-8a84-76bf0e7362e7.png"
+          width="300" />
+      </div>
+      <div class="item-three">
+        <img src="images/Alex_Stewart_Minimal_japanese_crayon_packaging_Muji_ea6d3e58-6592-4e5d-aeb4-022801f24f03.png"
+          width="300" />
+      </div>
+      <div class="item-four">
+        <img src="images/jarek-ceborski-IhqDpFz7I8Q-unsplash.jpg" height="1000px" />
+      </div>
+    </div>
+  </section>
+
+  <section class="container-fluid" id="footer">
+    <div>
+
+
+    </div>
+  </section>
+
+
+  <!-- Below here is the Footer code. ********************************************************* -->
+
+  <footer class="container-fluid">
+    <div class="container">
+
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
