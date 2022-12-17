@@ -70,7 +70,7 @@ h3 {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1;
+    z-index: 2;
     background-color: #F7A4A4;
     height: 70px;
     display: flex;
@@ -180,7 +180,7 @@ h3 {
 
 .location-description {
     opacity: 0;
-    z-index: 3;
+    z-index: 1;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -201,35 +201,59 @@ h3 {
     }
 
     #location-image {
-        height: 40vh;
+        height: 50vh;
+        filter: brightness(50%);
+    }
+
+    .location-description {
+        opacity:1;
+        top: 30%;
     }
   }
 
 
 /* Animation */
 #animation {
-    height: 100vh;
+    height: 60vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #animate {
-    -webkit-animation: mover 1.5s infinite  alternate;
-    animation: mover 1.5s infinite  alternate;
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
 }
 
 @-webkit-keyframes mover {
     0% { transform: translateY(0); }
-    100% { transform: translateY(-40px); }
+    100% { transform: translateY(-60px); }
 }
 @keyframes mover {
     0% { transform: translateY(0); }
-    100% { transform: translateY(-40px); }
+    100% { transform: translateY(-60px); }
 }
 
+@media only screen and (max-width: 600px) {
+    #animation {
+        height: 40vh;
+        margin-top: -10vh;
+    }
+  }
 
 /* About */
 #about {
-    height: 100vh;
+    height: 50vh;
     background-color: #F7A4A4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.about-container {
+    margin-left: 20vw;
+    margin-right: 20vw;
 }
 
 
