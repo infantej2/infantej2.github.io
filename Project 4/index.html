@@ -83,7 +83,7 @@
   </section>
 
   <section class="container-fluid" id="animation">
-    <img src="images/Ghost_logo.svg" id="animate" width="200" />
+    <img src="images/Ghost_logo.svg" id="animate" width="200"/>
   </section>
 
   <section class="container-fluid" id="about">
@@ -113,13 +113,23 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="images/pexels-marta-dzedyshko-7421217.jpg" class="d-block w-100 " width="50" alt="...">
+            <div class="d-block w-100 " id="carousel-1"></div>
           </div>
           <div class="carousel-item">
-            <img src="images/diliara-garifullina-Gx_vsiMRgzk-unsplash.jpg" class="d-block w-100" alt="...">
+            <div class="d-block w-100 " id="carousel-2"></div>
           </div>
           <div class="carousel-item">
-            <img src="images/fahmi-fakhrudin-nzyzAUsbV0M-unsplash.jpg" class="d-block w-100" alt="...">
+            <div class="d-block w-100 " id="carousel-3">
+              <div class="container">
+                <svg width="700" height="700" class="carousel-circle">
+                  <circle cx="100" cy="100" r="100" stroke-width="4" fill="#F7A4A4" />
+                </svg>
+                <img src="images/Ghost_Logo_White.svg" class="carousel-logo" width="65"/>
+                <a href="#open-modal" style="text-decoration: none; color: black;">
+                  <div id="button" class="carousel-prompt">Found me!</div>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -133,6 +143,15 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
+    </div>
+    <div id="open-modal" class="modal-window">
+      <div>
+        <a href="#close-modal" title="Close" class="modal-close">Close</a>
+        <h1>Raspberry Matte</h1>
+        <br/>
+        <div>Inform your barista at the cafe to order this special drink!</div>
+      </div>
+    </div>
     </div>
   </section>
 
@@ -153,18 +172,18 @@
     <div class="container">
       <div class="item-one">
         <img src="images/Alex_Stewart_Minimal_japanese_crayon_packaging_Muji_89972a43-4984-4d91-9ea6-3ead1d71271d.png"
-          width="300" />
+          width="100" />
       </div>
       <div class="item-two">
         <img src="images/Alex_Stewart_Minimal_japanese_crayon_packaging_Muji_c12fc88d-28e5-400a-8a84-76bf0e7362e7.png"
-          width="300" />
+          width="30vw" />
       </div>
       <div class="item-three">
         <img src="images/Alex_Stewart_Minimal_japanese_crayon_packaging_Muji_ea6d3e58-6592-4e5d-aeb4-022801f24f03.png"
-          width="300" />
+          width="30vw" />
       </div>
       <div class="item-four">
-        <img src="images/jarek-ceborski-IhqDpFz7I8Q-unsplash.jpg" height="1000px" />
+        <img src="images/jarek-ceborski-IhqDpFz7I8Q-unsplash.jpg" width="70vw" />
       </div>
     </div>
   </section>

@@ -50,6 +50,18 @@ h3 {
     letter-spacing: 0.08em;
 }
 
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 40px;
+    }
+    .title {
+        font-size: 22px;
+    }
+    .content {
+        font-size: 26px;
+    }
+  }
+
 #button {
     border: solid #FFFBC1;
     background-color: #FFFBC1;
@@ -104,7 +116,7 @@ h3 {
 }
 
 #nav-space {
-    margin-left: 1vw;
+    margin-left: 3vw;
 }
 
 #down {
@@ -112,7 +124,7 @@ h3 {
 }
 
 #navbarTogglerDemo02 {
-    padding-left: 30vw;
+    padding-left: 15vw;
 }
 
 @media only screen and (max-width: 1500px) {
@@ -147,7 +159,7 @@ h3 {
     .hero-title {
         margin-top: 35vh;
         color: #FFF;
-        font-size: 50px;
+        font-size: 40px;
         padding-left: 17vw;
     }
 
@@ -197,17 +209,17 @@ h3 {
 
 @media only screen and (max-width: 600px) {
     #location {
-        height: 60vh;
+        height: 70vh;
     }
 
     #location-image {
-        height: 50vh;
         filter: brightness(50%);
+        width: 100vw;
     }
 
     .location-description {
         opacity:1;
-        top: 30%;
+        top: 50%;
     }
   }
 
@@ -221,6 +233,7 @@ h3 {
 }
 
 #animate {
+    width: 200;
     -webkit-animation: mover 1s infinite  alternate;
     animation: mover 1s infinite  alternate;
 }
@@ -236,8 +249,11 @@ h3 {
 
 @media only screen and (max-width: 600px) {
     #animation {
-        height: 40vh;
-        margin-top: -10vh;
+        height: 45vh;
+        margin-top: 6vh;
+    }
+    #animate {
+        width: 100;
     }
   }
 
@@ -256,16 +272,137 @@ h3 {
     margin-right: 20vw;
 }
 
+@media only screen and (max-width: 600px) {
+    #about {
+        height: 65vh;
+    }
+    .about-container {
+        margin-right: 10vw;
+        margin-left: 10vw;
+    }
+  }
+
 
 /* Carousel */
 #carousel {
-    height: 100vh;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 #carousel-wrapper {
-    height: 200px;
-    width: 50%;
+    width: 60vw;
 }
+
+.carousel-item {
+    height: 60vh;
+}
+
+#carousel-1 {
+    background-image: url("images/pexels-marta-dzedyshko-7421217.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+	background-position: center;
+    height: 100%;
+}
+
+#carousel-2 {
+    background-image: url("images/diliara-garifullina-Gx_vsiMRgzk-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+	background-position: center;
+    height: 100%;
+}
+
+#carousel-3 {
+    background-image: url("images/fahmi-fakhrudin-nzyzAUsbV0M-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+	background-position: center;
+    height: 100%;
+}
+
+.carousel-circle {
+    z-index: 1;
+    margin-top: 37vh;
+    margin-left: 50px;
+    position: absolute;
+}
+
+.carousel-logo {
+    position: absolute;
+    z-index: 1;
+    margin-top: 38vh;
+    margin-left: 140px;
+    transform: rotate(-0.07turn);
+}
+
+.carousel-prompt {
+    z-index: 1;
+    margin-top: 47vh;
+    margin-left: 78px;
+    position: absolute;
+    padding: 5px;
+}
+
+.modal-window {
+    position: fixed;
+    background-color: rgba(32, 32, 32, 0.74);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+  }
+
+  .modal-window:target {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .modal-window > div {
+    width: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2em;
+    background: #FFFBC1;
+    border-radius: 20px;
+  }
+  
+  .modal-close {
+    color: black;
+    line-height: 50px;
+    font-size: 80%;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 70px;
+    text-decoration: none;
+  }
+
+  .modal-close :hover {
+    color: black;
+  }
+
+  @media only screen and (max-width: 600px) {
+    #carousel {
+        height: 65vh;
+        width: 100vw;
+    }
+    #carousel-wrapper {
+        width: 90vw;
+    }
+  }
 
 
 /* Crayons */
