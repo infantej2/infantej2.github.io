@@ -713,9 +713,27 @@ footer {
     margin-top: 2vw;
 }
 
+#twitter-icon .icon {
+    width:41px;
+    height:40px;
+    margin-left: 30px;
+}
+
+#facebook-icon .icon {
+    width:41px;
+    height:40px;
+    margin-left: 35px;
+}
+
+#insta-icon .icon {
+    width:41px;
+    height:40px;
+    margin-left: 40px;
+}
+
 @media only screen and (max-width: 600px) {
     #footer {
-        height: 90vh;
+        height: 110vh;
     }
     .form-group {
         width: 90vw;
@@ -728,12 +746,24 @@ footer {
         flex-wrap: wrap;
     }
     .footer-contact {
-        margin-left: -7vw;
-        margin-right: -7vw;
+        margin-left: -18vw;
+        margin-right: -5vw;
     }
     .socials {
-        margin-left: -11vw;
+        margin-left: -30vw;
         margin-top: 10vh;
+    }
+    .socials #social-name {
+        opacity: 0;
+    }
+    #twitter-icon .icon {
+        margin-left: 50px;
+    }
+    #facebook-icon .icon {
+        margin-left: 20px;
+    }
+    #insta-icon .icon {
+        margin-left: -30px;
     }
   }
 
