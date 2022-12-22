@@ -91,7 +91,7 @@ h3 {
     top: 0;
     width: 100%;
     z-index: 2;
-    background-color: #1C1C27;
+    background-color: #28293D;
     height: 70px;
     display: flex;
     align-items: center;
@@ -108,6 +108,16 @@ h3 {
     color: #FFF!important;
 }
 
+.nav-item:hover .nav-link {
+    color: #FF8080!important;
+}
+
+@media only screen and (max-width: 600px) {
+    #navbar {
+        opacity: 0;
+    }
+  }
+
 /* Bubbles */
 .bubbles {
     position: absolute;
@@ -118,13 +128,13 @@ h3 {
   }
   .bubbles li {
     position: absolute;
-    list-stye: none;
+    list-style: none;
     display: block;
     width: 20px;
     height: 20px;
     border-radius: 30%;
     bottom: -150px;
-    background: rgba(255, 255, 255, .2);
+    background: #28293D;
     animation: animate 25s infinite linear;
   }
   .bubbles li:nth-child(1) {
@@ -224,19 +234,20 @@ h3 {
     color: #FFF;
     padding-left: 10vw;
     width: 90vw;
+    z-index: 1;
 }
 
 @media only screen and (max-width: 600px) {
     .hero-title {
-        top: 55%;
+        top: 35%;
         color: #FFF;
         font-size: 40px;
-        padding-left: 5vw;
+        padding-left: 10vw;
         width: 400px;
     }
 
     #hero {
-        height: 60vh;
+        height: 90vh;
     }
   }
 
@@ -247,7 +258,7 @@ h3 {
 /* About */
 #about {
     height: 50vh;
-    background-color: #1C1C27;
+    background-color: #28293D;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -255,8 +266,8 @@ h3 {
 }
 
 .about-container {
-    margin-left: 20vw;
-    margin-right: 20vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
 }
 
 @media only screen and (max-width: 600px) {
@@ -270,10 +281,29 @@ h3 {
   }
 
 
+/* Work */
+#work {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
 
+.work-container {
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
 
-
-
+@media only screen and (max-width: 600px) {
+    #work {
+        height: 65vh;
+    }
+    .work-container {
+        margin-right: 10vw;
+        margin-left: 10vw;
+    }
+  }
 
 /* Footer */
 #footer {
